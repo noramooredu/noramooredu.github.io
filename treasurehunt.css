@@ -1,0 +1,90 @@
+body {
+    text-align: center; /* This aligns the text of the entire page using the text-align function. */
+    background-color: #FFC3A1; /* This changes the entire background of the page, however if you put a background image, it will overlay the color, unless the image is transparent. */
+    color: #2263db; /* This changes the color of all the text, unless specific lines are changed within in their own code. */
+    /*background-image: url("https://cdn.pixabay.com/photo/2023/03/30/11/02/paw-7887470_1280.jpg"); /* This sets a background image to our page. */
+    /*opacity: 0.6;*/
+}
+.opacity {
+    background-image: url("https://cdn.pixabay.com/photo/2023/03/30/11/02/paw-7887470_1280.jpg");
+    background-repeat: no-repeat; /* This specifies the how the background image is tiled, and makes sure that if you were to zoom out, it will not repeat the image and the image will be fixed. */
+    background-size: cover; /* This specifies the size of the background and tells it to cover the whole page. */
+    opacity: 0.6;
+}
+h1 {
+    color: #530707; /* Sets the text of h1 to that specified color, in this case #530707. */
+    animation-duration: 4s; /* Because we have assigned this h1 to perform an animation, we have set a specific duration that we want the animation to last for. */
+    animation-name: heading; /* We define what animation we want to be performed. */
+  }
+  @keyframes heading { /* This defines a new animation named "heading", and within the curly braces the values and properties of the animation can be specified. */
+    0% { /* The 0% specifies the stages the animation is in, so it will start off at 0%. */
+      transform: scaleX(0.5); /* This transform function allows the code to perform some sort of transformation to the text, in this case, since it is set to something less than 1 it will shrink the text horizontally. */
+      opacity: 0; /* The text opacity is at 0, meaning that the text is completely transparent. */
+    }
+    60% { /* This 60% specifies that the animation is 60% of its full performance/capacity. */
+      transform: scaleX(1.6); /* Here the text will be transformed by a factor of 1.6, stretching the text. */
+      opacity: 1; /* With an opacity of 1, the element will be fully visible. It is binary that they are using here, because the opacity can either be 0 or 1, with 0 being completely transparent, 1 being completely opaque. */
+    }
+    100% { /* This is when the animation reaches its end and the element is set back to its original size and opacity, which doesn't actually matter because opacity was already established in the previous line. */
+      transform: scaleX(1); /* The transform scale value of 1, specifically the scaleX value of 1 (implying that this is the x-value, the width value), means that the text's width is set back to its original width. */
+    }
+}
+* { /* This asterix is a selector that selects all of the things on this page. */
+    font-family: "Quicksand", sans-serif; /* This code sets the font of the text on this page, all to the Quicksand font. */
+}
+span { /* This span element groups the text in a line and assigns a style to them or does something to that lines text all grouped together. */ 
+    background-color: white; /* In this case, it changed the background color of the text and the text alone to white. */
+}
+ul { /* This calls the ul from the HTML code, ul standing for unordered list, and sets these stylistic values to the list. */
+    list-style-position: inside; /* This specifies the position of the "::marker" pseudo-element's box in the list item. The "::marker" is the bullet point or the checkbox in front of each list item, and specifies where it should be positioned, in this case inside. Pseudo selectors are the state of the selected thing. */
+    list-style-type: none; /* This list-style-type element talks about how the bullets should look like and if there should be any at all, and sets it to none. */
+    text-align: left; /* Sets the style for the text alignment, and sets it to the left. */
+    width: 346px; /* Sets the width of the list. */
+    margin-left: auto; /* Sets the left margin of the list to automatically set. */
+    margin-right: auto; /* Sets the right margin of the list to automatically set. */
+    background-color: white; /* Sets the color of the background of the list to white. */
+  }
+.center { /* This calls in the center class defined in the HTML code */
+    margin-left: auto; /* Sets the left margin of the list to automatically set. */
+    margin-right: auto; /* Sets the right margin of the list to automatically set. */
+    background-color: white; /* Sets the color of the background of the list to white. */
+    min-width: max-content; /* This constraints the content width to a certain degree, in this case to the maximum. */
+    min-height: max-content; /* This constraints the content height to a certain degree, in this case to the maximum. */
+    text-size-adjust: 50px; /* This adjusts the size of the text and text inflation algorithm, which will help adjust the text size on different electronic devices. */
+}
+td { /* Calls in the td, the table cell element, and td stands for table data. */
+    overflow: hidden; /* Handles content that overflows the element's content box. */
+    white-space: nowrap; /* The text does not wrap into a new line. */
+    height: 75px; /* Sets the height of the table data. */
+    width: 75px; /* Sets the width of the table data. */
+}
+td:hover { /* This code does the following text below. */
+    cursor: pointer; /* On hover of a table cell, change the cursor to a pointer. */
+}
+footer ul { /* Calls in the footer unordered list, the name list. */
+    list-style-position: inside; /* This sets the unordered list element inside the footer to have its list-style position inside the list item. */
+    list-style-type: none; /* Removes the bullet point from the unordered list. */
+    text-align: left; /* Sets the text alignment of the ul to left. */
+    width: 125px; /* Sets the width of the list to 125 pixels. */
+    margin-left: auto; /* This centers the list horizontally by setting the left margin to auto. */
+    margin-right: auto; /* This centers the list horizontally by setting the right margin to auto. */
+}
+a:link { /* This "a:" is a reference to the HTML tag. */
+    color: pink; /* Sets the color to pink. */
+}
+a:visited { /* Sets cursor to pointer when the link has been visited. */
+    cursor: pointer; /* Changes cursor to pointer. */
+}
+a:hover { /* Sets cursor to pointer when hovering over a link. */
+    cursor: pointer; /* Changes cursor to pointer. */
+}
+button:hover { /* This sets cursor to pointer when hovering over a button. */
+    cursor: pointer; /* Changes cursor to pointer. */
+}
+button {
+    width: 166px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: black;
+}

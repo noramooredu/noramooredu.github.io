@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!--This declares the document type and version of the HTML document.-->
+<html lang = "en"> <!--This line starts the HTML document and sets the language to English.-->
+<head>
+    <meta charset = "UTF-8"> <!--This line specifies the character encoding of the HTML document.-->
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge"> <!--This line sets the document mode to the latest version of Internet Explorer.-->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> <!--This line sets the viewport settings for responsive web design.-->
+    <title>Dog Treasure Hunt</title> <!--Sets the title of the webpage.-->
+    <link rel = "icon" type = "image/x-icon" href = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXHkNhsMg-VD-FAjg3-mICNIHy6SPe3pOY_g&usqp=CAU"> <!--Sets the icon for the webpage.-->
+    <link rel = "stylesheet" href = "treasurehunt.css"> <!--Links the CSS file to the HTML document.-->
+    <link rel = "preconnect" href = "https://fonts.googleapis.com"> <!--This preconnects to the Google Fonts API main domain.-->
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin> <!--This preconnects to the Google Fonts API subdomain that actually has the font files.-->
+    <link href = "https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel = "stylesheet"> <!--This line imports the Quicksand font.-->
+</head>
+<div class="opacity">
+<body> <!--Body section of the HTML document.-->
+    <h1><span>Dog Treasure Hunt Game</span></h1> <!--This is the heading of the webpage.-->
+    <h2><span>You've got 3 tries to find the bone!</span></h2> <!--This is the subheading of the website.-->
+    <ul> <!--Starts an unordered list, ul.-->
+        <li><input type = "checkbox">Click the x-boxes to reveal what is on the map.</li> <!--Each of these three list items have a checkbox in front of them.-->
+        <li><input type = "checkbox">If you get caught by the dog catcher, you lose!</li>
+        <li><input type = "checkbox">If you find the bone, you win!</li>
+    </ul> 
+    <h1 id = "title"><span>Can you find the bone?</span></h1> <!--Adds a heading to the webpage with an ID of "title".-->
+    <img src = "https://cdn.pixabay.com/photo/2019/07/06/14/02/drawing-4320529_1280.png" alt = "Dog" height = "250px"> <!--Adds an image to the webpage with a source, alternative text, and height.-->
+    <table class = "center" border = "2" height = "350px" width = "350px" style = "table-layout: fixed"> <!--This creates a table element with a class named "center", a border of 2, a height of 350px, a width of 350px, and a fixed table layout.-->
+        <tr> <!--In each row, there are 4 table data cells with an ID attribute of "Box" plus the cell number (1 through 16), and an onclick attribute of "treasure ('Box' + cell number)". Additionally, an x is inside each cell of the table.-->
+            <td id = "Box1" onclick = "treasure ('Box1')">X</td>
+            <td id = "Box2" onclick = "treasure ('Box2')">X</td>
+            <td id = "Box3" onclick = "treasure ('Box3')">X</td>
+            <td id = "Box4" onclick = "treasure ('Box4')">X</td>
+        </tr>
+        <tr> 
+            <td id = "Box5" onclick = "treasure ('Box5')">X</td>
+            <td id = "Box6" onclick = "treasure ('Box6')">X</td>
+            <td id = "Box7" onclick = "treasure ('Box7')">X</td>
+            <td id = "Box8" onclick = "treasure ('Box8')">X</td>
+        </tr>
+        <tr>
+            <td id = "Box9" onclick = "treasure ('Box9')">X</td>
+            <td id = "Box10" onclick = "treasure ('Box10')">X</td>
+            <td id = "Box11" onclick = "treasure ('Box11')">X</td>
+            <td id = "Box12" onclick = "treasure ('Box12')">X</td>
+        </tr>
+        <tr>
+            <td id = "Box13" onclick = "treasure ('Box13')">X</td>
+            <td id = "Box14" onclick = "treasure ('Box14')">X</td>
+            <td id = "Box15" onclick = "treasure ('Box15')">X</td>
+            <td id = "Box16" onclick = "treasure ('Box16')">X</td>
+        </tr>
+    </table>
+    <button type = "button" onclick = "location.reload ()"> <!--This creates a button of type "button", and when clicked, it will reload the page.-->
+        Restart Game <!--This is the name of the button displayed on the page.-->
+    </button>
+    <footer> <!--This creates a footer element.-->
+         <ul> <!--Creates another unordered list in the footer.-->
+            <!--List of all our names.-->
+            <li>Jacob Oakley</li>
+            <li>Brandon Shinzato</li>
+            <li>Nora Moor</li>
+         </ul>
+    <a href = "https://dog.com"><span>Check out this website about dogs!</span></a> <!--This creates an anchor element, that creates a hyperlink to another website, with an href, which stands for hypertext reference, attribute of "https://dog.com".-->
+    </footer></div>
+    <script type = "text/javascript" src = "treasurehunt.js"></script> <!--This makes a script with a type attribute of "text/javascript" and a src attribute of "treasurehunt.js".-->
+</body>
+</html>
